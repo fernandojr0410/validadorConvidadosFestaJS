@@ -31,3 +31,40 @@
   justify-content: center;
   padding-bottom: 40px;
 }
+
+.titulo-card > h3 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.inputs-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 0;
+}
+
+.inputs-card > span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.inputs-card > input, button {
+  height: 20px;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: 1px solid #b3b3b3;
+  outline: none;
+  cursor: pointer;
+}
+
+.inputs-card > button {
+  background-color: rgb(67, 176, 219);
+  font-weight: 500;
+  font-size: 14px;
+  height: 26px;
+}
+
+.inputs-card > button:hover {
+  opacity: 0.8;
+}

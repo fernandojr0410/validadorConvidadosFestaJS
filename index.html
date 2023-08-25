@@ -15,13 +15,25 @@
             <h3>Lista de Convidados</h3>
           </div>
           <div class="informacoes-card">
-            <div class="verficar-campos-card">
-            <span>Digite seu nome na lista:</span>
-            <input type="text" id="verificarNome" placeholder="Digite seu nome...">
+            <div class="inputs-card">
+            <span>Bem vindo a festa Senhor(a):</span>
+            <input type="text" id="verificarNome" placeholder="Digite seu nome completo..." required>
+          </div>
+
+          <div class="inputs-card">
+            <span>Quem convidou você para essa festa?</span>
+            <input type="text" id="convidadoPor" placeholder="Digite o nome..." required>
+            <button onclick="verificarCampos()">Verificar se pode entrar</button>
+          </div>
+
+          <div class="inputs-card">
+            <span>Está permitindo Entrar?</span>
+            <label for="" id="PermissaoEntrada">Verificando...</label>
           </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>

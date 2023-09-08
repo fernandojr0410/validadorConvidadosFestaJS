@@ -10,31 +10,22 @@ function verificarCampos() {
   VerificarEntrada(nomeConvidado, convidadoPor);
 }
 
-function VerificarEntrada() {
-  nomeConvidado = document.getElementById("verificarNome").value;
-  convidadoFesta = document.getElementById("convidadoPor").value;
-
-  convidadoPedro = [
+function VerificarEntrada(nomeConvidado, convidadoFesta) {
+  const convidadoPedro = [
     "Fernando Junior",
     "Cristiano Fernandes",
     "Maria Clara",
     "Ana Paula",
   ];
 
-  if (convidadoPedro.includes(nomeConvidado)) {
+  const convidado = "Pedro";
+
+  if (convidadoPedro.includes(nomeConvidado) && convidadoFesta === convidado) {
+    alert("Esse nome está na Lista!");
     document.getElementById("PermissaoEntrada").innerText =
       "Entrada Permitida!";
   } else {
-    document.getElementById("PermissaoEntrada").innerText = "Entrada Negada!";
-  }
-
-  convidado = ["Pedro"];
-
-  if (convidado.includes(convidadoFesta)) {
-    alert("Convidado Correto!");
-    document.getElementById("PermissaoEntrada").innerText = "Entrada Liberada!";
-  } else {
-    alert("Convidado Errado!");
+    alert("Esse  não é o nome do convidado!");
     document.getElementById("PermissaoEntrada").innerText = "Entrada Negada!";
   }
 }

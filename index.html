@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="imagex/png" href="./img/logo.png">
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
     <title>Lista de Convidados</title>
   </head>
@@ -16,20 +15,32 @@
           </div>
           <div class="informacoes-card">
             <div class="inputs-card">
-            <span>Bem vindo a festa Senhor(a):</span>
-            <input type="text" id="verificarNome" placeholder="Digite seu nome completo..." required>
-          </div>
-
-          <div class="inputs-card">
-            <span>Quem convidou você para essa festa?</span>
-            <input type="text" id="convidadoPor" placeholder="Digite o nome..." required>
-            <button onclick="verificarCampos()">Verificar se pode entrar</button>
-          </div>
-
-          <div class="inputs-card">
-            <span>Está permitindo Entrar?</span>
-            <label for="" id="PermissaoEntrada">Verificando...</label>
-          </div>
+              <span>Bem vindo a festa Senhor(a):</span>
+              <input
+                type="text"
+                id="verificarNome"
+                placeholder="Digite seu nome completo..."
+                required
+              />
+            </div>
+            <div class="inputs-card">
+              <span>Quem convidou você para essa festa?</span>
+              <input
+                type="text"
+                id="convidadoPor"
+                placeholder="Digite o nome..."
+                required
+              />
+              <button onclick="verificarCampos()">
+                Verificar se pode entrar
+              </button>
+            </div>
+            <div class="inputs-card">
+              <span>Está permitindo Entrar?</span>
+              <label for="PermissaoEntrada" id="PermissaoEntrada"
+                >Verificando...</label
+              >
+            </div>
           </div>
         </div>
       </div>
